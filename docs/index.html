@@ -39,11 +39,11 @@ body.dark .phone{--scr:#000000}
 body.dark .spec .warn{color:#fb923c}
 .spec .info{color:#2563eb}
 body.dark .spec .info{color:#93c5fd}
-.ph{display:inline-flex;align-items:center;justify-content:center;border:1.5px dashed currentColor;border-radius:4px;font-size:10px;opacity:.75;flex:none}
+.ph{display:inline-flex;align-items:center;justify-content:center;line-height:1;flex:none;font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}
 .spec .lic{color:#7c3aed}
 body.dark .spec .info{color:#2563eb}
 body.dark .spec .info{color:#93c5fd}
-.ph{display:inline-flex;align-items:center;justify-content:center;border:1.5px dashed currentColor;border-radius:4px;font-size:10px;opacity:.75;flex:none}
+.ph{display:inline-flex;align-items:center;justify-content:center;line-height:1;flex:none;font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}
 .spec .lic{color:#c4b5fd}
 .hide-spec .spec{display:none}
 /* button */
@@ -106,8 +106,8 @@ function logoSVG(id,size,color,opts={}){
   const ns='http://www.w3.org/2000/svg';
   if(id==='google'){const i=document.createElement('img');i.src=LOGOS.google_png;i.width=size;i.height=size;i.className='logo';i.alt='';return i}
   const L=id==='apple'?(opts.only?LOGOS.apple_only:LOGOS.apple_left):LOGOS[id];
-  if(!L){const d=document.createElement('span');d.className='logo ph';d.title='Apple 로고는 재배포 금지 — Apple Design Resources 에서 직접 받아 넣으세요';d.textContent='⛔';
-    const z=opts.only?Math.round(size*0.45):Math.round(size*0.42);d.style.width=z+'px';d.style.height=z+'px';if(!opts.only){d.style.margin='0 '+Math.round(size*0.12)+'px 0 '+Math.round(size*0.18)+'px'}return d}
+  if(!L){const d=document.createElement('span');d.className='logo ph';d.title='Apple 로고는 재배포 금지 — Apple Design Resources 에서 직접 받아 넣으세요';d.textContent='🍎';
+    const z=opts.only?Math.round(size*0.45):Math.round(size*0.42);d.style.width=z+'px';d.style.height=z+'px';d.style.fontSize=Math.round(z*0.9)+'px';if(!opts.only){d.style.margin='0 '+Math.round(size*0.12)+'px 0 '+Math.round(size*0.18)+'px'}return d}
   const s=document.createElementNS(ns,'svg');s.setAttribute('viewBox',L.vb);s.setAttribute('class','logo');
   if(id==='apple'&&!opts.only){s.setAttribute('height',size);s.setAttribute('width',size*31/44)}else{s.setAttribute('width',size);s.setAttribute('height',size)}
   const p=document.createElementNS(ns,'path');p.setAttribute('d',L.d);p.setAttribute('fill',color);
@@ -188,7 +188,7 @@ function render(){
   const st=document.getElementById('stage');st.innerHTML='';
   if(S.view==='grid'){st.appendChild(renderGrid())}else{st.appendChild(renderPhone());
     const lg=document.createElement('div');lg.className='legend';
-    lg.innerHTML=`<p><b>ℹ 공식 기본</b> — 고른 모서리가 그 회사 공식 기본값과 다를 때 참고로 표시. 고른 값은 모든 버튼에 똑같이 적용된다.</p><p><b>⛔ 로고 직접 받기</b> — 재배포 금지 로고. 라이브러리에는 넣지 않는다. Apple 로고는 <a href="https://developer.apple.com/design/resources/#sign-in-with-apple" style="color:inherit">Apple Design Resources</a> 에서 직접 받는다.</p><p>값 출처: <a href="research/official-guides-2026-11-05.md" style="color:inherit">official-guides-2026-11-05.md</a></p>`;st.appendChild(lg)}
+    lg.innerHTML=`<p><b>ℹ 공식 기본</b> — 고른 모서리가 그 회사 공식 기본값과 다를 때 참고로 표시. 고른 값은 모든 버튼에 똑같이 적용된다.</p><p><b>⛔ 로고 직접 받기</b> — 재배포 금지 로고(데모에서는 🍎 로 대신 표시). 라이브러리에는 넣지 않는다. Apple 로고는 <a href="https://developer.apple.com/design/resources/#sign-in-with-apple" style="color:inherit">Apple Design Resources</a> 에서 직접 받는다.</p><p>값 출처: <a href="https://github.com/AI-Dico/social-login-buttons/blob/main/docs/research/official-guides-2026-11-05.md" style="color:inherit">official-guides-2026-11-05.md</a></p>`;st.appendChild(lg)}
   location.hash=new URLSearchParams({lang:S.lang,target:S.target,purpose:S.purpose,layout:S.layout,corner:S.corner,height:S.height,theme:S.theme,align:S.align,alt:S.alt?1:0,spec:S.spec?1:0,view:S.view}).toString();
   renderCtl();
 }

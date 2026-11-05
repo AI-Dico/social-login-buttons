@@ -16,7 +16,7 @@
 - 카카오 · 네이버 · Google 로고는 각 회사 공식 배포 자료에서 가져왔다.
 - **Apple 로고는 포함하지 않는다.** Apple Design Resources 라이선스가 재배포를 금지한다.
   [Apple Design Resources](https://developer.apple.com/design/resources/#sign-in-with-apple) 에서 직접 받아 넣는다.
-  데모에서는 ⛔ 자리표시로 보인다.
+  데모에서는 🍎 이모지로 대신 보인다.
 
 ## 상표
 
