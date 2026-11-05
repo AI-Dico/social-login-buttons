@@ -1,45 +1,63 @@
 # social-login-buttons
 
-카카오 · 네이버 · Apple · Google 로그인 버튼을 각 회사 공식 가이드에서 잰 값으로 그린 디자인 시스템.
-모서리 · 언어 · 플랫폼(웹 / iOS / Android) · 형태 · 테마를 골라 같은 모양으로 맞춘다.
+**English** · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh-CN.md)
 
-- 데모: https://ai-dico.github.io/social-login-buttons/
-- 실측 값과 출처: [docs/research/official-guides-2026-11-05.md](docs/research/official-guides-2026-11-05.md)
-- 결정 기록: [docs/decisions-2026-11-05.md](docs/decisions-2026-11-05.md)
+A design system for Kakao, NAVER, Apple and Google sign-in buttons, built from values measured against each company's official brand guidelines.
+Pick the corner radius, color, height, label, language, layout and theme, and every button follows the same shape.
 
-## 쓰는 법 — AI 에게 프롬프트로
+![Brand colors (light) · Brand colors (dark) · All black (pill) · All white (square)](docs/images/hero.png)
 
-1. [데모](https://ai-dico.github.io/social-login-buttons/)에서 모서리 · 색 · 높이 · 문구 · 형태를 고른다.
-2. 「대상 스택」을 고른다 — Flutter · 웹(HTML/CSS) · Svelte · React · SwiftUI · Compose · 자동.
-3. 「AI 프롬프트 복사」를 눌러 Claude Code · Cursor · Lovable 같은 AI 코딩 도구에 붙여 넣는다.
+- **Demo:** https://ai-dico.github.io/social-login-buttons/
+- **Measured values and sources (Korean):** [docs/research/official-guides-2026-11-05.md](docs/research/official-guides-2026-11-05.md)
+- **Decision log (Korean):** [docs/decisions-2026-11-05.md](docs/decisions-2026-11-05.md)
 
-데모를 거치지 않고 기본 모양으로 바로 쓰려면 아래를 붙여 넣는다.
+## How to use — hand a prompt to your AI
+
+1. In the [demo](https://ai-dico.github.io/social-login-buttons/), choose corner radius, color, height, label and layout.
+2. Choose a **target stack** — Flutter · Web (HTML/CSS) · Svelte · React · SwiftUI · Compose · Auto.
+3. Click **Copy AI prompt** and paste it into an AI coding tool such as Claude Code, Cursor or Lovable.
+
+To use the default look without opening the demo, paste this:
 
 ```text
-내 프로젝트에 소셜 로그인 버튼(카카오 → 네이버 → Apple → Google)을 넣어줘. 스택은 내 프로젝트에 맞게.
-기준: https://github.com/AI-Dico/social-login-buttons
-토큰 정본: https://raw.githubusercontent.com/AI-Dico/social-login-buttons/main/tokens.json 을 먼저 읽고 defaults 값을 따라줘.
-로고: 저장소 assets/ 의 파일을 쓰고, Apple 로고는 재배포 금지라 자리만 만들어 두고 받는 곳을 나에게 알려줘.
-이미 로그인 버튼이 있으면 동작은 그대로 두고 모양만 바꿔.
-적용하다 공식 가이드와 다른 점이나 tokens.json 문제를 찾으면 마지막에 이슈 초안으로 정리해줘.
+Add social sign-in buttons (Kakao → NAVER → Apple → Google) to my project, using my project's stack.
+Reference: https://github.com/AI-Dico/social-login-buttons
+Read the token source of truth first: https://raw.githubusercontent.com/AI-Dico/social-login-buttons/main/tokens.json and follow its defaults.
+Pick labels that fit the screen (signup screen → signup, sign-in screen → login, both → continue).
+Logos: use the files in the repo's assets/. The Apple logo cannot be redistributed, so leave a slot for it and tell me where to download it.
+If sign-in buttons already exist, keep their behavior and change only the appearance.
+If you find anything that differs from the official guidelines or a problem in tokens.json, list it at the end as an issue draft.
 ```
 
-## 파일
+## Options
 
-- `tokens.json` — 토큰 정본(회사별 색 · 크기 · 문구 · 로고 · 옵션).
-- `assets/` — 카카오 심볼 · 네이버 N(SVG), Google G(SVG · PNG @1x~@4x). Google SVG 는 브라우저용이고 Flutter · 네이티브는 PNG 를 쓴다.
+| Option | Choices |
+|---|---|
+| Corner radius | Per-company official · 0 · 4 · 8 · 12 · Pill — applied to every button |
+| Button color | Brand · All white · All black · Custom (background · text, with contrast ratio) |
+| Logo color | Brand · Mono |
+| Height · Text | Per-company official · 44 · 48 · 52 · 56 / Same for all · Per-company official |
+| Label | Auto (fits the screen) · Sign in · Continue · Sign up — Korean · English |
+| Layout | Full-width stack · Narrow · Icons only · Primary button + icons |
+| Theme | Light · Dark |
 
-## 고칠 점은 이슈로
+## Files
 
-공식 가이드와 다른 값, tokens.json 오류, 특정 스택에서 구현이 어려운 점을 찾으면 [이슈](https://github.com/AI-Dico/social-login-buttons/issues/new)로 알려 주세요. 화면 · 스택 · 고른 옵션 · 스크린샷을 함께 적어 주면 빠르게 고칠 수 있습니다.
+- `tokens.json` — token source of truth (colors, sizes, labels, logos, options per company).
+- `assets/` — Kakao symbol and NAVER N (SVG), Google G (SVG and PNG @1x–@4x). Use the Google G PNG on Flutter and native platforms.
 
-## 로고
+## Logos
 
-- 카카오 · 네이버 · Google 로고는 각 회사 공식 배포 자료에서 가져왔다.
-- **Apple 로고는 포함하지 않는다.** Apple Design Resources 라이선스가 재배포를 금지한다.
-  [Apple Design Resources](https://developer.apple.com/design/resources/#sign-in-with-apple) 에서 직접 받아 넣는다.
-  데모에서는 🍎 이모지로 대신 보인다.
+- The Kakao, NAVER and Google logos come from each company's official distribution.
+- **The Apple logo is not included.** The Apple Design Resources license forbids redistribution.
+  Download it yourself from [Apple Design Resources](https://developer.apple.com/design/resources/#sign-in-with-apple).
+  - Use the White file on black buttons and the Black file on white buttons, as is. The files contain a background rectangle, so tinting them turns the logo into a solid box.
+  - Until the file is added, show the label alone, centered. The demo shows a 🍎 emoji in its place.
 
-## 상표
+## Report fixes as issues
 
-Kakao, NAVER, Apple, Google 및 각 로고는 해당 회사의 상표다. 이 저장소는 각 회사와 관련이 없으며, 버튼은 각 회사 브랜드 가이드를 따르도록 만들었다.
+If you find a value that differs from the official guidelines, an error in tokens.json, or something hard to implement on a particular stack, please [open an issue](https://github.com/AI-Dico/social-login-buttons/issues/new). Include the screen, stack, chosen options and a screenshot. Issues are welcome in any language.
+
+## Trademarks
+
+Kakao, NAVER, Apple, Google and their logos are trademarks of their respective owners. This project is not affiliated with any of these companies; the buttons are built to follow each company's brand guidelines.
