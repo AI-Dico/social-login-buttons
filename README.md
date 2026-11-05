@@ -58,6 +58,10 @@ If you find anything that differs from the official guidelines or a problem in t
 
 If you find a value that differs from the official guidelines, an error in tokens.json, or something hard to implement on a particular stack, please [open an issue](https://github.com/AI-Dico/social-login-buttons/issues/new). Include the screen, stack, chosen options and a screenshot. Issues are welcome in any language.
 
+## License
+
+Code, tokens and docs: [MIT](LICENSE). Logos in `assets/` are trademarks of their owners and are not covered by the MIT license — follow each company's brand guidelines.
+
 ## Trademarks
 
 Kakao, NAVER, Apple, Google and their logos are trademarks of their respective owners. This project is not affiliated with any of these companies; the buttons are built to follow each company's brand guidelines.

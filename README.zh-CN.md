@@ -58,6 +58,10 @@ Logo 使用仓库 assets/ 中的文件;Apple Logo 禁止再分发,请只预留�
 
 如果发现与官方指南不一致的数值、tokens.json 的错误,或在某个技术栈上难以实现的地方,请[提交 Issue](https://github.com/AI-Dico/social-login-buttons/issues/new)。附上页面、技术栈、所选选项和截图,我们能更快修复。Issue 可以用任何语言撰写。
 
+## 许可证
+
+代码、令牌和文档:[MIT](LICENSE)。`assets/` 中的 Logo 是各公司的商标,不在 MIT 许可范围内 — 请遵循各公司的品牌指南。
+
 ## 商标
 
 Kakao、NAVER、Apple、Google 及其 Logo 均为各自所有者的商标。本项目与上述公司无关联;按钮按照各公司的品牌指南制作。
