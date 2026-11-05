@@ -98,13 +98,14 @@ const T={
 };
 const HEIGHT_OFFICIAL={kakao:46,naver:48,apple:44,google:{web:40,android:40,ios:44}};
 const CORNERS=[['official','공식'],['0','각진 0'],['4','4'],['8','8'],['12','12'],['pill','알약']];
-const S=Object.assign({lang:'ko',target:'ios',purpose:'login',layout:'full',corner:'official',height:'48',font:'unified',theme:'light',align:'center',alt:false,spec:true,order:['kakao','naver','apple','google'],on:{kakao:1,naver:1,apple:1,google:1},view:'phone'},
+const S=Object.assign({lang:'ko',target:'ios',purpose:'login',layout:'full',corner:'official',height:'48',font:'unified',tone:'brand',logo:'brand',theme:'light',align:'center',alt:false,spec:true,order:['kakao','naver','apple','google'],on:{kakao:1,naver:1,apple:1,google:1},view:'phone'},
   Object.fromEntries(new URLSearchParams(location.hash.slice(1))));
 ['alt','spec'].forEach(k=>{if(typeof S[k]==='string')S[k]=S[k]==='1'||S[k]==='true'});
 
 function logoSVG(id,size,color,opts={}){
   const ns='http://www.w3.org/2000/svg';
-  if(id==='google'){const i=document.createElement('img');i.src=LOGOS.google_png;i.width=size;i.height=size;i.className='logo';i.alt='';return i}
+  if(id==='google'){const i=document.createElement('img');i.src=LOGOS.google_png;i.width=size;i.height=size;i.className='logo';i.alt='';
+    if(opts.mono){i.style.filter=(color&&color.toUpperCase()==='#FFFFFF')?'brightness(0) invert(1)':'brightness(0)';if(color&&!['#FFFFFF','#000000','#111111','#1F1F1F','#191919'].includes(color.toUpperCase()))i.style.filter='brightness(0) invert(1)'}return i}
   const L=id==='apple'?(opts.only?LOGOS.apple_only:LOGOS.apple_left):LOGOS[id];
   if(!L){const d=document.createElement('span');d.className='logo ph';d.title='Apple 로고는 재배포 금지 — Apple Design Resources 에서 직접 받아 넣으세요';d.textContent='🍎';
     const z=opts.only?Math.round(size*0.45):Math.round(size*0.42);d.style.width=z+'px';d.style.height=z+'px';d.style.fontSize=Math.round(z*0.9)+'px';if(!opts.only){d.style.margin='0 '+Math.round(size*0.12)+'px 0 '+Math.round(size*0.18)+'px'}return d}
@@ -124,9 +125,29 @@ function heightFor(id){
   if(S.height==='official'){const o=HEIGHT_OFFICIAL[id];return typeof o==='object'?o[S.target]:o}
   return +S.height;
 }
-function styleFor(id){const st=T[id].style;const k=(S.alt&&st['alt_'+S.theme])?'alt_'+S.theme:S.theme;return st[k]}
+// 공통 단색 토큰 — 모든 회사가 같은 값을 쓴다
+const TONE={
+ white:{light:{bg:'#FFFFFF',fg:'#1F1F1F',border:'#DADCE0'},dark:{bg:'#FFFFFF',fg:'#1F1F1F',border:'#FFFFFF'}},
+ black:{light:{bg:'#111111',fg:'#FFFFFF',border:'#111111'},dark:{bg:'#111111',fg:'#FFFFFF',border:'#3A3A3A'}}
+};
+// 단색 버튼 위 브랜드 로고 색(로고 색 = 브랜드일 때)
+const BRAND_LOGO={kakao:{white:'#191919',black:'#FEE500'},naver:{white:'#03A94D',black:'#05AC4F'},apple:{white:'#000000',black:'#FFFFFF'},google:{white:null,black:null}};
+function styleFor(id){
+  if(S.tone==='brand'){const st=T[id].style;const k=(S.alt&&st['alt_'+S.theme])?'alt_'+S.theme:S.theme;return Object.assign({},st[k],S.logo==='mono'?{logo:st[k].fg,mono:true}:{})}
+  const tk=TONE[S.tone][S.theme];
+  const logo=S.logo==='mono'?tk.fg:(BRAND_LOGO[id][S.tone]||tk.fg);
+  return {bg:tk.bg,fg:tk.fg,border:tk.border,logo,mono:S.logo==='mono'};
+}
+function colorFlag(id){
+  const f=[];
+  if(S.tone!=='brand'&&id==='kakao')f.push('카카오 가이드: 배경 #FEE500 고정');
+  if(S.tone==='black'&&id==='naver')f.push('네이버 공식 다크 흰 버튼은 #1F1F1F');
+  if(S.logo==='mono'&&id==='google')f.push('Google 가이드: 단색 G 금지');
+  if(S.logo==='mono'&&(id==='kakao'||id==='naver')&&S.tone==='brand')f.push('로고 단색');
+  return f.join(' · ');
+}
 function makeButton(id,mode){ // mode: full | narrow | icon
-  const t=T[id],h=heightFor(id),st=styleFor(id),{r,flag}=resolveRadius(id,h);
+  const t=T[id],h=heightFor(id),st=styleFor(id),rr=resolveRadius(id,h),r=rr.r,flag=[rr.flag,colorFlag(id)].filter(Boolean).join(' · ');
   const b=document.createElement('button');b.className='slb';b.type='button';
   b.style.height=h+'px';b.style.background=st.bg;b.style.color=st.fg;
   b.style.borderRadius=(mode==='icon'&&S.corner==='pill'?'50%':r+'px');
@@ -138,12 +159,12 @@ function makeButton(id,mode){ // mode: full | narrow | icon
   if(mode==='icon'){
     b.style.width=h+'px';b.classList.add('icon');
     let size=id==='kakao'?Math.round(h*0.46):id==='naver'?18:id==='google'?20:h;
-    b.appendChild(logoSVG(id,size,st.logo||st.fg,{only:true}));specBits.push(`logo ${size}`);
+    b.appendChild(logoSVG(id,size,st.logo||st.fg,{only:true,mono:st.mono}));specBits.push(`logo ${size}`);
   }else{
     const left=S.align==='left'&&mode==='full';
     let logoSize,el;
     if(id==='apple'){logoSize=h;el=logoSVG('apple',h,st.logo)}
-    else if(id==='google'){logoSize=20;el=logoSVG('google',20)}
+    else if(id==='google'){logoSize=20;el=logoSVG('google',20,st.logo||st.fg,{mono:st.mono})}
     else{logoSize=t.logo(h,left);el=logoSVG(id,logoSize,st.logo)}
     const span=document.createElement('span');span.className='lbl';span.textContent=lbl;
     span.style.fontSize=fs+'px';span.style.fontWeight=uni?500:t.weight;span.style.lineHeight='1';
@@ -189,8 +210,8 @@ function render(){
   const st=document.getElementById('stage');st.innerHTML='';
   if(S.view==='grid'){st.appendChild(renderGrid())}else{st.appendChild(renderPhone());
     const lg=document.createElement('div');lg.className='legend';
-    lg.innerHTML=`<p><b>ℹ 공식 기본</b> — 고른 모서리가 그 회사 공식 기본값과 다를 때 참고로 표시. 고른 값은 모든 버튼에 똑같이 적용된다.</p><p><b>⛔ 로고 직접 받기</b> — 재배포 금지 로고(데모에서는 🍎 로 대신 표시). 라이브러리에는 넣지 않는다. Apple 로고는 <a href="https://developer.apple.com/design/resources/#sign-in-with-apple" style="color:inherit">Apple Design Resources</a> 에서 직접 받는다.</p><p>값 출처: <a href="https://github.com/AI-Dico/social-login-buttons/blob/main/docs/research/official-guides-2026-11-05.md" style="color:inherit">official-guides-2026-11-05.md</a></p>`;st.appendChild(lg)}
-  location.hash=new URLSearchParams({lang:S.lang,target:S.target,purpose:S.purpose,layout:S.layout,corner:S.corner,height:S.height,font:S.font,theme:S.theme,align:S.align,alt:S.alt?1:0,spec:S.spec?1:0,view:S.view}).toString();
+    lg.innerHTML=`<p><b>ℹ 공식 기본</b> — 고른 모서리가 그 회사 공식 기본값과 다를 때 참고로 표시. 고른 값은 모든 버튼에 똑같이 적용된다.</p><p><b>⛔ 로고 직접 받기</b> — 재배포 금지 로고(데모에서는 🍎 로 대신 표시). 라이브러리에는 넣지 않는다. Apple 로고는 <a href="https://developer.apple.com/design/resources/#sign-in-with-apple" style="color:inherit">Apple Design Resources</a> 에서 직접 받는다.</p><p><b>단색 토큰</b> — 흰색 ${JSON.stringify(TONE.white[S.theme])} · 검정 ${JSON.stringify(TONE.black[S.theme])}</p><p>값 출처: <a href="https://github.com/AI-Dico/social-login-buttons/blob/main/docs/research/official-guides-2026-11-05.md" style="color:inherit">official-guides-2026-11-05.md</a></p>`;st.appendChild(lg)}
+  location.hash=new URLSearchParams({lang:S.lang,target:S.target,purpose:S.purpose,layout:S.layout,corner:S.corner,height:S.height,font:S.font,tone:S.tone,logo:S.logo,theme:S.theme,align:S.align,alt:S.alt?1:0,spec:S.spec?1:0,view:S.view}).toString();
   renderCtl();
 }
 function seg(key,label,opts){
@@ -209,7 +230,9 @@ function renderCtl(){
   seg('height','높이',[['official','회사별 공식'],['44','44'],['48','48'],['52','52'],['56','56']])+
   seg('font','글자 크기',[['unified','모두 같게'],['brand','회사별 공식']])+
   seg('theme','테마',[['light','라이트'],['dark','다크']])+
-  seg('alt','대체 스타일',[[false,'기본'],[true,'흰·중립·외곽선']])+
+  seg('tone','버튼 색',[['brand','브랜드색'],['white','모두 흰색'],['black','모두 검정']])+
+  seg('logo','로고 색',[['brand','브랜드'],['mono','단색']])+
+  seg('alt','대체 스타일(브랜드색일 때)',[[false,'기본'],[true,'흰·중립·외곽선']])+
   seg('spec','실측값 표시',[[true,'보이기'],[false,'숨기기']])+
   `<div class="grp"><label>회사</label><div class="chk">${S.order.map(i=>`<label><input type="checkbox" data-on="${i}" ${S.on[i]?'checked':''}> ${T[i].name}</label>`).join('')}</div></div>`+
   `<button class="copy" id="copy">선택 JSON 복사</button>`;
