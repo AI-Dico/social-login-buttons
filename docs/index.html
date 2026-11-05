@@ -98,7 +98,7 @@ const T={
 };
 const HEIGHT_OFFICIAL={kakao:46,naver:48,apple:44,google:{web:40,android:40,ios:44}};
 const CORNERS=[['official','공식'],['0','각진 0'],['4','4'],['8','8'],['12','12'],['pill','알약']];
-const S=Object.assign({lang:'ko',target:'ios',purpose:'login',layout:'full',corner:'official',height:'48',theme:'light',align:'center',alt:false,spec:true,order:['kakao','naver','apple','google'],on:{kakao:1,naver:1,apple:1,google:1},view:'phone'},
+const S=Object.assign({lang:'ko',target:'ios',purpose:'login',layout:'full',corner:'official',height:'48',font:'unified',theme:'light',align:'center',alt:false,spec:true,order:['kakao','naver','apple','google'],on:{kakao:1,naver:1,apple:1,google:1},view:'phone'},
   Object.fromEntries(new URLSearchParams(location.hash.slice(1))));
 ['alt','spec'].forEach(k=>{if(typeof S[k]==='string')S[k]=S[k]==='1'||S[k]==='true'});
 
@@ -133,7 +133,8 @@ function makeButton(id,mode){ // mode: full | narrow | icon
   if(st.border)b.style.boxShadow=`inset 0 0 0 1px ${st.border}`;
   const lbl=t.label[S.lang][mode==='narrow'&&id==='kakao'?'short':S.purpose];
   b.setAttribute('aria-label',t.label[S.lang][S.purpose]);
-  let fs=t.font(h),ls=0,specBits=[`h ${h}`,`r ${mode==='icon'&&S.corner==='pill'?'원':r}`];
+  const uni=S.font!=='brand';
+  let fs=uni?(S.height==='official'?15:Math.max(14,Math.round(h/3))):t.font(h),ls=0,specBits=[`h ${h}`,`r ${mode==='icon'&&S.corner==='pill'?'원':r}`];
   if(mode==='icon'){
     b.style.width=h+'px';b.classList.add('icon');
     let size=id==='kakao'?Math.round(h*0.46):id==='naver'?18:id==='google'?20:h;
@@ -145,7 +146,7 @@ function makeButton(id,mode){ // mode: full | narrow | icon
     else if(id==='google'){logoSize=20;el=logoSVG('google',20)}
     else{logoSize=t.logo(h,left);el=logoSVG(id,logoSize,st.logo)}
     const span=document.createElement('span');span.className='lbl';span.textContent=lbl;
-    span.style.fontSize=fs+'px';span.style.fontWeight=t.weight;span.style.lineHeight=(id==='google'?'20px':'1');
+    span.style.fontSize=fs+'px';span.style.fontWeight=uni?500:t.weight;span.style.lineHeight='1';
     if(id==='google'){const [pl,g,pr]=t.pad[S.target];b.style.padding=`0 ${pr}px 0 ${pl}px`;el.style.marginRight=g+'px';if(left){el.style.left=pl+'px'}specBits.push(`pad ${pl}/${g}/${pr}`)}
     else if(id==='apple'){if(!el.classList.contains('ph'))el.style.marginRight='0';b.style.paddingRight='12px';if(left)el.style.left='8px'}
     else{el.style.marginRight=t.gap+'px';if(left)el.style.left=t.padLeft+'px';b.style.padding='0 16px'}
@@ -189,7 +190,7 @@ function render(){
   if(S.view==='grid'){st.appendChild(renderGrid())}else{st.appendChild(renderPhone());
     const lg=document.createElement('div');lg.className='legend';
     lg.innerHTML=`<p><b>ℹ 공식 기본</b> — 고른 모서리가 그 회사 공식 기본값과 다를 때 참고로 표시. 고른 값은 모든 버튼에 똑같이 적용된다.</p><p><b>⛔ 로고 직접 받기</b> — 재배포 금지 로고(데모에서는 🍎 로 대신 표시). 라이브러리에는 넣지 않는다. Apple 로고는 <a href="https://developer.apple.com/design/resources/#sign-in-with-apple" style="color:inherit">Apple Design Resources</a> 에서 직접 받는다.</p><p>값 출처: <a href="https://github.com/AI-Dico/social-login-buttons/blob/main/docs/research/official-guides-2026-11-05.md" style="color:inherit">official-guides-2026-11-05.md</a></p>`;st.appendChild(lg)}
-  location.hash=new URLSearchParams({lang:S.lang,target:S.target,purpose:S.purpose,layout:S.layout,corner:S.corner,height:S.height,theme:S.theme,align:S.align,alt:S.alt?1:0,spec:S.spec?1:0,view:S.view}).toString();
+  location.hash=new URLSearchParams({lang:S.lang,target:S.target,purpose:S.purpose,layout:S.layout,corner:S.corner,height:S.height,font:S.font,theme:S.theme,align:S.align,alt:S.alt?1:0,spec:S.spec?1:0,view:S.view}).toString();
   renderCtl();
 }
 function seg(key,label,opts){
@@ -206,6 +207,7 @@ function renderCtl(){
   seg('align','정렬(전체 폭)',[['center','가운데'],['left','로고 왼쪽']])+
   seg('corner','모서리',CORNERS)+
   seg('height','높이',[['official','회사별 공식'],['44','44'],['48','48'],['52','52'],['56','56']])+
+  seg('font','글자 크기',[['unified','모두 같게'],['brand','회사별 공식']])+
   seg('theme','테마',[['light','라이트'],['dark','다크']])+
   seg('alt','대체 스타일',[[false,'기본'],[true,'흰·중립·외곽선']])+
   seg('spec','실측값 표시',[[true,'보이기'],[false,'숨기기']])+
