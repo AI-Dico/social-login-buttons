@@ -1,0 +1,1794 @@
+[
+  {
+    "file": "001-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "002-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "003-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "004-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 8,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "005-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "006-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "007-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "008-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 12,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "009-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "010-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "011-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "012-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 12,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "013-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "014-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "015-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "016-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": "pill",
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "017-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "018-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "019-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "020-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": "pill",
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "021-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "022-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "023-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "024-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "025-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "026-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "027-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "028-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "029-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "030-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "031-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "032-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "033-kakao.html",
+    "options": {
+      "provider": "kakao"
+    }
+  },
+  {
+    "file": "034-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "height": "official",
+      "font": "unified"
+    }
+  },
+  {
+    "file": "035-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "height": "official",
+      "font": "brand"
+    }
+  },
+  {
+    "file": "036-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "height": 49.5,
+      "corner": "pill",
+      "layout": "icon",
+      "align": "logo-left",
+      "logoColor": "mono",
+      "tone": "custom",
+      "bg": "#204060",
+      "fg": "#ab35ef",
+      "type": "submit"
+    }
+  },
+  {
+    "file": "037-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "height": 60,
+      "font": "brand",
+      "align": "logo-left",
+      "attrs": {
+        "title": "&<>\"' 한글",
+        "data-z": "last",
+        "data-a": "first"
+      }
+    }
+  },
+  {
+    "file": "038-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "039-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "040-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "041-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 12,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "042-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "043-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "044-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "045-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": "pill",
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "046-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "047-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "048-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "049-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": "pill",
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "050-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "051-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "052-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "053-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "054-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "055-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "056-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "057-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "058-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "059-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "060-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "061-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "062-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "063-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "064-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "065-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "066-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "067-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "068-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "069-naver.html",
+    "options": {
+      "provider": "naver",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 4,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "070-naver.html",
+    "options": {
+      "provider": "naver"
+    }
+  },
+  {
+    "file": "071-naver.html",
+    "options": {
+      "provider": "naver",
+      "height": "official",
+      "font": "unified"
+    }
+  },
+  {
+    "file": "072-naver.html",
+    "options": {
+      "provider": "naver",
+      "height": "official",
+      "font": "brand"
+    }
+  },
+  {
+    "file": "073-naver.html",
+    "options": {
+      "provider": "naver",
+      "height": 49.5,
+      "corner": "pill",
+      "layout": "icon",
+      "align": "logo-left",
+      "logoColor": "mono",
+      "tone": "custom",
+      "bg": "#204060",
+      "fg": "#ab35ef",
+      "type": "submit"
+    }
+  },
+  {
+    "file": "074-naver.html",
+    "options": {
+      "provider": "naver",
+      "height": 60,
+      "font": "brand",
+      "align": "logo-left",
+      "attrs": {
+        "title": "&<>\"' 한글",
+        "data-z": "last",
+        "data-a": "first"
+      }
+    }
+  },
+  {
+    "file": "075-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "076-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "077-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "078-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": "pill",
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "079-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "080-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "081-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "082-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "083-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "084-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "085-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "086-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "087-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "088-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "089-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "090-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "091-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "092-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "093-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "094-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "095-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "096-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "097-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "098-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 4,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "099-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "100-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "101-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "102-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 4,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "103-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "104-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "105-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "106-apple.html",
+    "options": {
+      "provider": "apple",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 8,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "107-apple.html",
+    "options": {
+      "provider": "apple"
+    }
+  },
+  {
+    "file": "108-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": "official",
+      "font": "unified"
+    }
+  },
+  {
+    "file": "109-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": "official",
+      "font": "brand"
+    }
+  },
+  {
+    "file": "110-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": 49.5,
+      "corner": "pill",
+      "layout": "icon",
+      "align": "logo-left",
+      "logoColor": "mono",
+      "tone": "custom",
+      "bg": "#204060",
+      "fg": "#ab35ef",
+      "type": "submit"
+    }
+  },
+  {
+    "file": "111-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": 60,
+      "font": "brand",
+      "align": "logo-left",
+      "attrs": {
+        "title": "&<>\"' 한글",
+        "data-z": "last",
+        "data-a": "first"
+      }
+    }
+  },
+  {
+    "file": "112-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "113-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "114-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "115-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": "official",
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "116-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "117-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "118-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "119-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "login",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "120-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": 12
+    }
+  },
+  {
+    "file": "121-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "122-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "123-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 0,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "124-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "125-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "126-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "127-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "continue",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 4,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "128-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "129-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "130-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "131-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 4,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "132-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "133-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "134-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "black",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "135-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "signup",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 8,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "136-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "brand",
+      "theme": "light",
+      "corner": "official"
+    }
+  },
+  {
+    "file": "137-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "white",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "138-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "black",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "139-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "ko",
+      "tone": "custom",
+      "theme": "dark",
+      "corner": 8,
+      "bg": "#090909",
+      "fg": "#abcdef"
+    }
+  },
+  {
+    "file": "140-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "brand",
+      "theme": "dark",
+      "corner": 0
+    }
+  },
+  {
+    "file": "141-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "white",
+      "theme": "light",
+      "corner": 4
+    }
+  },
+  {
+    "file": "142-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "black",
+      "theme": "dark",
+      "corner": 8
+    }
+  },
+  {
+    "file": "143-google.html",
+    "options": {
+      "provider": "google",
+      "purpose": "short",
+      "lang": "en",
+      "tone": "custom",
+      "theme": "light",
+      "corner": 12,
+      "bg": "#fefefe",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "144-google.html",
+    "options": {
+      "provider": "google"
+    }
+  },
+  {
+    "file": "145-google.html",
+    "options": {
+      "provider": "google",
+      "height": "official",
+      "font": "unified"
+    }
+  },
+  {
+    "file": "146-google.html",
+    "options": {
+      "provider": "google",
+      "height": "official",
+      "font": "brand"
+    }
+  },
+  {
+    "file": "147-google.html",
+    "options": {
+      "provider": "google",
+      "height": 49.5,
+      "corner": "pill",
+      "layout": "icon",
+      "align": "logo-left",
+      "logoColor": "mono",
+      "tone": "custom",
+      "bg": "#204060",
+      "fg": "#ab35ef",
+      "type": "submit"
+    }
+  },
+  {
+    "file": "148-google.html",
+    "options": {
+      "provider": "google",
+      "height": 60,
+      "font": "brand",
+      "align": "logo-left",
+      "attrs": {
+        "title": "&<>\"' 한글",
+        "data-z": "last",
+        "data-a": "first"
+      }
+    }
+  },
+  {
+    "file": "149-apple.html",
+    "options": {
+      "provider": "apple",
+      "appleLogoSrc": "/local/apple.svg?x=\"'&<>",
+      "tone": "black",
+      "logoColor": "mono"
+    }
+  },
+  {
+    "file": "150-apple.html",
+    "options": {
+      "provider": "apple",
+      "appleLogoSrc": "/local/apple.svg",
+      "layout": "icon"
+    }
+  },
+  {
+    "file": "151-apple.html",
+    "options": {
+      "provider": "apple",
+      "appleLogoSrc": "",
+      "align": "logo-left"
+    }
+  },
+  {
+    "file": "152-apple.html",
+    "options": {
+      "provider": "apple",
+      "layout": "icon",
+      "height": "official"
+    }
+  },
+  {
+    "file": "153-naver.html",
+    "options": {
+      "provider": "naver",
+      "tone": "custom",
+      "bg": "#000000",
+      "fg": "#ffffff",
+      "theme": "dark",
+      "border": "#abcdef"
+    }
+  },
+  {
+    "file": "154-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "tone": "custom",
+      "theme": "light",
+      "bg": "#e2e2e2",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "155-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "tone": "custom",
+      "theme": "light",
+      "bg": "#e1e1e1",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "156-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "tone": "custom",
+      "theme": "dark",
+      "bg": "#212121",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "157-kakao.html",
+    "options": {
+      "provider": "kakao",
+      "tone": "custom",
+      "theme": "dark",
+      "bg": "#202020",
+      "fg": "#123456"
+    }
+  },
+  {
+    "file": "158-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": 0.000001,
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "159-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": 1e-7,
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "160-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": 48.001,
+      "corner": "pill"
+    }
+  },
+  {
+    "file": "161-apple.html",
+    "options": {
+      "provider": "apple",
+      "height": 1e+21,
+      "corner": "pill"
+    }
+  }
+]

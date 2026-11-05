@@ -29,6 +29,34 @@ Kakao・NAVER・Apple・Google のログインボタンを、各社の公式ブ�
 公式ガイドラインとの違いや tokens.json の問題を見つけたら、最後に Issue の下書きとしてまとめて。
 ```
 
+## パッケージとして使う
+
+Web と Rails は同じオプションなら同じ HTML を出力します。
+
+```sh
+npm install @ai-dico/social-login-buttons
+```
+
+```js
+import { renderButton, defineSocialLoginButton } from '@ai-dico/social-login-buttons';
+import '@ai-dico/social-login-buttons/css';
+
+document.querySelector('#login').innerHTML = renderButton({ provider: 'kakao' });
+defineSocialLoginButton(); // <social-login-button provider="naver" type="submit">
+```
+
+```ruby
+# Gemfile
+gem 'social_login_buttons'
+```
+
+```erb
+<%= stylesheet_link_tag 'social_login_buttons' %>
+<%= social_login_button :kakao %>
+```
+
+詳細: [packages/web](packages/web/README.md) · [packages/gem](packages/gem/README.md)
+
 ## 選べる項目
 
 | 項目 | 選択肢 |

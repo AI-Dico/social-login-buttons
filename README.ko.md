@@ -29,6 +29,34 @@
 적용하다 공식 가이드와 다른 점이나 tokens.json 문제를 찾으면 마지막에 이슈 초안으로 정리해줘.
 ```
 
+## 패키지로 쓰기
+
+웹과 Rails 는 같은 옵션이면 같은 HTML 을 냅니다.
+
+```sh
+npm install @ai-dico/social-login-buttons
+```
+
+```js
+import { renderButton, defineSocialLoginButton } from '@ai-dico/social-login-buttons';
+import '@ai-dico/social-login-buttons/css';
+
+document.querySelector('#login').innerHTML = renderButton({ provider: 'kakao' });
+defineSocialLoginButton(); // <social-login-button provider="naver" type="submit">
+```
+
+```ruby
+# Gemfile
+gem 'social_login_buttons'
+```
+
+```erb
+<%= stylesheet_link_tag 'social_login_buttons' %>
+<%= social_login_button :kakao %>
+```
+
+자세한 옵션: [packages/web](packages/web/README.md) · [packages/gem](packages/gem/README.md)
+
 ## 고를 수 있는 것
 
 | 항목 | 선택지 |

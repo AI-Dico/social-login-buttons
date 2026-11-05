@@ -29,6 +29,34 @@ If sign-in buttons already exist, keep their behavior and change only the appear
 If you find anything that differs from the official guidelines or a problem in tokens.json, list it at the end as an issue draft.
 ```
 
+## Use as a package
+
+Web and Rails get the same HTML from the same options.
+
+```sh
+npm install @ai-dico/social-login-buttons
+```
+
+```js
+import { renderButton, defineSocialLoginButton } from '@ai-dico/social-login-buttons';
+import '@ai-dico/social-login-buttons/css';
+
+document.querySelector('#login').innerHTML = renderButton({ provider: 'kakao' });
+defineSocialLoginButton(); // <social-login-button provider="naver" type="submit">
+```
+
+```ruby
+# Gemfile
+gem 'social_login_buttons'
+```
+
+```erb
+<%= stylesheet_link_tag 'social_login_buttons' %>
+<%= social_login_button :kakao %>
+```
+
+Details: [packages/web](packages/web/README.md) · [packages/gem](packages/gem/README.md)
+
 ## Options
 
 | Option | Choices |

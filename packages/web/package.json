@@ -1,0 +1,18 @@
+{
+  "name": "@ai-dico/social-login-buttons",
+  "version": "0.1.0",
+  "description": "Token-based Kakao, NAVER, Apple and Google login buttons",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "default": "./dist/index.js" },
+    "./css": "./dist/social-login-buttons.css"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": ["**/*.css"],
+  "scripts": { "test": "node --test", "prepack": "node ../../tools/gen-packages.mjs && node --test" },
+  "repository": { "type": "git", "url": "https://github.com/AI-Dico/social-login-buttons.git", "directory": "packages/web" }
+}

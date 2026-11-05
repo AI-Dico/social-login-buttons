@@ -29,6 +29,34 @@ Logo 使用仓库 assets/ 中的文件;Apple Logo 禁止再分发,请只预留�
 如果发现与官方指南不一致的地方或 tokens.json 的问题,请在最后整理成 Issue 草稿。
 ```
 
+## 作为软件包使用
+
+Web 与 Rails 在相同选项下输出相同的 HTML。
+
+```sh
+npm install @ai-dico/social-login-buttons
+```
+
+```js
+import { renderButton, defineSocialLoginButton } from '@ai-dico/social-login-buttons';
+import '@ai-dico/social-login-buttons/css';
+
+document.querySelector('#login').innerHTML = renderButton({ provider: 'kakao' });
+defineSocialLoginButton(); // <social-login-button provider="naver" type="submit">
+```
+
+```ruby
+# Gemfile
+gem 'social_login_buttons'
+```
+
+```erb
+<%= stylesheet_link_tag 'social_login_buttons' %>
+<%= social_login_button :kakao %>
+```
+
+详细选项: [packages/web](packages/web/README.md) · [packages/gem](packages/gem/README.md)
+
 ## 可选项
 
 | 项目 | 选项 |
